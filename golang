@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+    // Example list of integers
+    nums := []int{2, 3, 4, 5}
+
+    // Call the sumOfSquares function and print the result
+    result := sumOfSquares(nums)
+    fmt.Println("Sum of the squares of the original numbers:", result)
+}
+
+func sumOfSquares(nums []int) int {
+    sum := 0
+    for _, num := range nums {
+        square := num * num
+        sum += square
+    }
+    return sum
+}
